@@ -1,0 +1,14 @@
+.UserInfo-Container {
+  position: relative;
+  right: 5%;
+  margin-top: 15px;
+}
+
+.User_Info {
+  width: 20px;
+  height: 10px;
+  text-align: left;
+  margin: 30px 15px 15px;
+  font-weight: bold;
+  color: #008080;
+}

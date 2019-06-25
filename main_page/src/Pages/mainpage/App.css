@@ -1,0 +1,9 @@
+#root {
+    display: flex;
+    max-width: 1800px;
+    min-width: 320px;
+    width: 100%;
+    top: 5px;
+    bottom: 20px;
+    background-color: #e6e6e6;
+}
