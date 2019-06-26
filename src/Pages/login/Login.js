@@ -1,6 +1,6 @@
 import React from 'react';
 import './Login.css';
-import {Input, Button} from '../../component/input';
+import {Input, Button} from '../../component/form/input';
 
 
 

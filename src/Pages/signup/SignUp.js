@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './SignUp.css';
-import {Input, Button} from '../../component/input';
+import {Input, Button} from '../../component/form/input';
 
 class SignUp extends Component {
   constructor () {
