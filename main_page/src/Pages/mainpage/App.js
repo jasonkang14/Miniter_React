@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import TwoBoxes from '../../component/box';
 import './App.css';
-
+import { withRouter } from 'react-router-dom';
 
 class MainPage extends Component{
   render () {
@@ -11,4 +11,4 @@ class MainPage extends Component{
   }
 }
 
-export default MainPage;
+export default withRouter(MainPage);

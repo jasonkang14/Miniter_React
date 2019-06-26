@@ -22,9 +22,22 @@ class EnterNewTweet extends React.Component {
     componentDidMount() {
         //첫 화면에 보일 데이터를 페치..fetch
         let previousTweets = OldTweets.default.result;
+        console.log(previousTweets);
         this.setState({
             tweetArr: previousTweets
         })
+
+        // fetch('http://localhost:8000/api/tweet')
+        //     .then(
+        //         (response) => {
+        //             response.json().then((data) => {
+        //                 console.log(data);
+        //                 this.setState({
+        //                     tweetArr: data
+        //                 })
+        //             });
+        //         }
+        //     )
 
     }
 

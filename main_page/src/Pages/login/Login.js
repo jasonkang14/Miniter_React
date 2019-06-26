@@ -1,7 +1,7 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import './Login.css';
 import {Input, Button} from '../../component/input';
-import { Link } from 'react-router-dom';
+
 
 
 class Login extends React.Component {
@@ -10,24 +10,30 @@ class Login extends React.Component {
     this.state = {
       userId : "",
       password : "",
+      checked : false,
     }
   }
 
   handleChange = (e) => {
-    this.setState({[e.name] : e.value})
-    if(this.state.userId !== "" && this.state.password !== "") {
-      const elLogInBtn = document.getElementsByClassName('login-btn')[0];
-      elLogInBtn.style.backgroundColor = "#1aabff"
-    }
+    this.setState(
+      {[e.name] : e.value}, () => {
+        const {
+          userId,
+          password,
+        } = this.state;
+
+        this.setState({
+          checked: userId !== "" && password !== ""
+         })
+      }
+    )
+    
   }
   
 
   render () {
     return (
-      <div>
-        <span>
-            <Link to="/signup">회원가입</Link>
-        </span>
+        
       <div className="container">
       <img className="logo" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/944px-Twitter_Bird.svg.png" />
       <header><b>Log in to Miniter</b></header>
@@ -51,13 +57,13 @@ class Login extends React.Component {
           />
 
           <Button 
-            className="login-btn" 
+            className={` ${this.state.checked ? 'blue-btn signup-btn' : 'signup-btn'}` }
             innerHTML="Log in"
           />
       </form>
         <a href="./signup.html">Sign Up for Miniter</a>
     </div>
-    </div>
+
     );
   }
 }
