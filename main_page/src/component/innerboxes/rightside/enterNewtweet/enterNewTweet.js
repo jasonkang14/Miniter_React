@@ -22,7 +22,6 @@ class EnterNewTweet extends React.Component {
     componentDidMount() {
         //첫 화면에 보일 데이터를 페치..fetch
         let previousTweets = OldTweets.default.result;
-        console.log(previousTweets);
         this.setState({
             tweetArr: previousTweets
         })
@@ -67,8 +66,6 @@ class EnterNewTweet extends React.Component {
 
         this.setState({
             tweetArr: newList,
-        }, () => {
-            
         })
     }
 
@@ -87,8 +84,8 @@ class EnterNewTweet extends React.Component {
                     innerHTML="Tweet"
                     btnClicked={this.generateNewTweet}
                 />
-
                 <DisplayTweets />
+                <ul>
                 {
                     this.state.tweetArr.map(el => (
                         <li>
@@ -98,6 +95,7 @@ class EnterNewTweet extends React.Component {
                         </li>
                     ))
                 }
+                </ul>
             </div>
         );
     }
