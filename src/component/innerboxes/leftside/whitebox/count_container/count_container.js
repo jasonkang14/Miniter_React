@@ -4,7 +4,7 @@ import TweetCount from './tweetcount/tweetcount';
 import FollowerCount from './followercount/followercount';
 import FollowingCount from './followingcount/followingcount';
 
-const Count_Container = () => {
+const CountContainer = () => {
     return (
         <div className="Count_Container">
             <TweetCount />
@@ -14,4 +14,4 @@ const Count_Container = () => {
     );
 }
 
-export default Count_Container;
+export default CountContainer;

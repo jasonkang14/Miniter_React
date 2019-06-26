@@ -4,7 +4,7 @@ import Following from './following/following';
 import Followers from './followers/followers';
 import './userinfo_container.css';
 
-const Userinfo_Container = () => {
+const UserinfoContainer = () => {
     return (
         <div className="Userinfo_Container">
            <Tweets />
@@ -14,4 +14,4 @@ const Userinfo_Container = () => {
     );
 }
 
-export default Userinfo_Container;
+export default UserinfoContainer;

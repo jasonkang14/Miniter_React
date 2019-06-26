@@ -1,21 +1,24 @@
 import React from 'react';
-import './displayTweets.css';
 import TweetList from './tweetList/tweetList';
+import './displayTweets.css';
 
 class DisplayTweets extends React.Component {
     
-    constructor () {
-        super();
-    }
-
-    displayGeneratedTweets = () => {
-        
+    constructor (props) {
+        super(props);
     }
     
     render() {
         return (    
             <div className="DisplayTweets">
-                <TweetList />
+                <TweetList 
+                    tweet={this.props.el}
+                />
+                <li>
+                    <span className="User">{this.props.tweet.user}</span>
+                    <span className="Date">{this.props.tweet.date}</span>
+                    <div className="Content">{this.props.tweet.contents}</div>
+                </li>
             </div>
         );
     }

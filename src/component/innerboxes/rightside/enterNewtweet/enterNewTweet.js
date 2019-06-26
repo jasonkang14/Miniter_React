@@ -1,6 +1,7 @@
 import React from 'react';
 import './enterNewTweet.css';
-import {Textarea, Button} from '../../../form/input';
+import Textarea from '../../../form/textarea'
+import Button from '../../../form/button';
 import DisplayTweets from '../displaytweets/displayTweets';
 import * as OldTweets from '../../../../data/getAllTimeline';
 import UserName from '../../leftside/whitebox/username/userName'
@@ -20,7 +21,7 @@ class EnterNewTweet extends React.Component {
     }
 
     componentDidMount() {
-        //첫 화면에 보일 데이터를 페치..fetch
+        
         let previousTweets = OldTweets.default.result;
         this.setState({
             tweetArr: previousTweets
@@ -84,18 +85,16 @@ class EnterNewTweet extends React.Component {
                     innerHTML="Tweet"
                     btnClicked={this.generateNewTweet}
                 />
-                <DisplayTweets />
-                <ul>
                 {
-                    this.state.tweetArr.map(el => (
-                        <li>
-                            <span className="User">{el.user}</span>
-                            <span className="Date">{el.date}</span>
-                            <div className="Content">{el.contents}</div>
-                        </li>
-                    ))
+                    this.state.tweetArr.map(el => 
+                            <DisplayTweets
+                                key={el.contents}
+                                tweet={el}
+                            />
+                   
+                    )
                 }
-                </ul>
+                
             </div>
         );
     }

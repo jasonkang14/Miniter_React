@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './SignUp.css';
-import {Input, Button} from '../../component/form/input';
+import Input from '../../component/form/input';
+import Button from '../../component/form/button';
+import { withRouter } from  'react-router-dom';
 
 class SignUp extends Component {
   constructor () {
@@ -15,8 +17,8 @@ class SignUp extends Component {
     }
   }
 
-  handleChange = (e) => {
-    this.setState({ [e.name] : e.value }, () => {
+  handleChange = (event) => {
+    this.setState({ [event.target.name] : event.target.value }, () => {
       const {
         enterId,
         enterName,
@@ -32,6 +34,11 @@ class SignUp extends Component {
     })      
   }
 
+  signedUp = () => {
+    alert("회원가입 성공");
+    this.props.history.push('/login');
+  }
+
   render() {
     return (
       <div className="container">
@@ -45,7 +52,7 @@ class SignUp extends Component {
               placeholder="Enter ID" 
               autocomplete="enter-Id" 
               className="newId"
-              changeBtnColor={this.handleChange}
+              changeInput={this.handleChange}
             />
             <Input 
               type="text" 
@@ -53,7 +60,7 @@ class SignUp extends Component {
               placeholder="Enter Name" 
               autocomplete="enterName" 
               className="newName"
-              changeBtnColor={this.handleChange}
+              changeInput={this.handleChange}
             />
             <Input 
               type="password" 
@@ -61,7 +68,7 @@ class SignUp extends Component {
               placeholder="Password" 
               autocomplete="current-password" 
               className="newPassword"
-              changeBtnColor={this.handleChange}
+              changeInput={this.handleChange}
             />
             <Input 
               type="password" 
@@ -69,7 +76,7 @@ class SignUp extends Component {
               placeholder="Confirm Password" 
               autocomplete="enterProfile" 
               className="confirmPassword"
-              changeBtnColor={this.handleChange}
+              changeInput={this.handleChange}
             />
             <Input 
               type="text" 
@@ -77,11 +84,12 @@ class SignUp extends Component {
               placeholder="Profile" 
               autocomplete="enterProfile" 
               className="newProfile"
-              changeBtnColor={this.handleChange}
+              changeInput={this.handleChange}
             />
             <Button 
               className={` ${this.state.checked ? 'blue-btn signup-btn' : 'signup-btn'}`} 
               innerHTML="Sign Up"
+              btnClicked={this.signedUp}
             />
         </form>
       </div>
@@ -90,4 +98,4 @@ class SignUp extends Component {
   }
 }
 
-export default SignUp;
+export default withRouter(SignUp);

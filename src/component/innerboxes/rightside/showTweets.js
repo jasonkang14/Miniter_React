@@ -5,8 +5,6 @@ import EnterNewTweet from './enterNewtweet/enterNewTweet';
 
 const ShowTweets = () => {
     return (
-
-      
         <div className="ShowTweets">
             <EnterNewTweet />
         </div>
