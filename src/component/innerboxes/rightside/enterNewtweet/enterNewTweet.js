@@ -4,10 +4,10 @@ import Textarea from '../../../form/textarea'
 import Button from '../../../form/button';
 import DisplayTweets from '../displaytweets/displayTweets';
 import * as OldTweets from '../../../../data/getAllTimeline';
-import UserName from '../../leftside/whitebox/username/userName'
+
+//import UserName from '../../leftside/whitebox/username/userName'
 
 class EnterNewTweet extends React.Component {
-
     constructor () {
         super();
         this.state = {
@@ -86,6 +86,7 @@ class EnterNewTweet extends React.Component {
                     btnClicked={this.generateNewTweet}
                 />
                 {
+                    
                     this.state.tweetArr.map(el => 
                             <DisplayTweets
                                 key={el.contents}

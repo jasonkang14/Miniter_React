@@ -4,10 +4,6 @@ import './displayTweets.css';
 
 class DisplayTweets extends React.Component {
     
-    constructor (props) {
-        super(props);
-    }
-    
     render() {
         return (    
             <div className="DisplayTweets">

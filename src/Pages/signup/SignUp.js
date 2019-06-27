@@ -42,7 +42,7 @@ class SignUp extends Component {
   render() {
     return (
       <div className="container">
-       <img className="logo" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/944px-Twitter_Bird.svg.png"/>
+       <img className="logo" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/944px-Twitter_Bird.svg.png" alt="twitterlogo"/>
        <header><b>Sign up to Miniter</b></header>
         <div className="input-container">
           <form>
