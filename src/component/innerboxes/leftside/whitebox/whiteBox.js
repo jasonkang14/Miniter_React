@@ -1,8 +1,8 @@
 import React from 'react';
-import UserName from './username/userName';
-import Profile from './profile/profile';
-import UserInfoContainer from './userinfo_container/userinfo_container';
-import CountContainer from './count_container/count_container';
+import UserName from './UserName/UserName';
+import Profile from './Profile/Profile';
+import UserInfoContainer from './UserInfoContainer/UserInfoContainer';
+import CountContainer from './CountContainer/CountContainer';
 import './whiteBox.css';
 
 const WhiteBox = () => {

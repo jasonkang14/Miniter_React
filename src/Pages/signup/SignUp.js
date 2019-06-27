@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './SignUp.css';
-import Input from '../../component/form/input';
-import Button from '../../component/form/button';
+import './signUp.css';
+import Input from '../../Component/Form/Input';
+import Button from '../../Component/Form/Button';
 import { withRouter } from  'react-router-dom';
 
 class SignUp extends Component {
@@ -34,7 +34,8 @@ class SignUp extends Component {
     })      
   }
 
-  signedUp = () => {
+  signedUp = (event) => {
+    event.preventDefault();
     alert("회원가입 성공");
     this.props.history.push('/login');
   }

@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
-import UserInfo from '../../component/innerboxes/leftside/userInfo';
-import ShowTweets from '../../component/innerboxes/rightside/showTweets';
+import UserInfo from '../../Component/InnerBoxes/LeftSide/UserInfo';
+import ShowTweets from '../../Component/InnerBoxes/RightSide/ShowTweets';
 import './main.css';
 import { withRouter } from 'react-router-dom';
 
@@ -8,7 +8,7 @@ class MainPage extends Component{
   render () {
     return (
       <Fragment>
-        <UserInfo />
+        <UserInfo/>
         <ShowTweets />
       </Fragment>
     );

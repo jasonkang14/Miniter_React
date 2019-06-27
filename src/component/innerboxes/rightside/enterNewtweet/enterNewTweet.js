@@ -1,8 +1,8 @@
 import React from 'react';
 import './enterNewTweet.css';
-import Textarea from '../../../form/textarea'
-import Button from '../../../form/button';
-import DisplayTweets from '../displaytweets/displayTweets';
+import Textarea from '../../../Form/Textarea'
+import Button from '../../../Form/Button';
+import DisplayTweets from '../DisplayTweets/DisplayTweets';
 import * as OldTweets from '../../../../data/getAllTimeline';
 
 //import UserName from '../../leftside/whitebox/username/userName'

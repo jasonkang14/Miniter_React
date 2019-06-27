@@ -6,10 +6,10 @@ import {
     Switch,
 } from  'react-router-dom';
 
-import Home from './Pages/home/home';
-import Login from './Pages/login/Login';
-import SignUp from './Pages/signup/SignUp';
-import MainPage from './Pages/mainpage/main';
+import Home from './Pages/Home/Home';
+import Login from './Pages/Login/Login';
+import SignUp from './Pages/SignUp/SignUp';
+import MainPage from './Pages/MainPage/Main';
 
 class Routes extends React.Component {
   render () {

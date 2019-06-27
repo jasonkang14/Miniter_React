@@ -1,7 +1,7 @@
 import React from 'react';
-import './Login.css';
-import Input from '../../component/form/input';
-import Button from '../../component/form/button';
+import './login.css';
+import Input from '../../Component/Form/Input';
+import Button from '../../Component/Form/Button';
 import { withRouter } from  'react-router-dom';
 
 class Login extends React.Component {
@@ -29,8 +29,8 @@ class Login extends React.Component {
     )
   }
 
-  loginToMiniter = () => {
-    console.log("outside if", this.props.history);
+  loginToMiniter = e => {
+    e.preventDefault();
     fetch("http://localhost:8000/api/login", {
       method: 'post',
       headers: {
@@ -47,7 +47,6 @@ class Login extends React.Component {
       (response) => {
         response.json().then((data) => {
           if (data.new === "true") {
-            console.log("inside if", this.props.history);
             this.props.history.push('/main');
           }
         })

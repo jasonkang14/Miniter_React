@@ -1,6 +1,6 @@
 import React from 'react';
 import './showTweets.css';
-import EnterNewTweet from './enterNewtweet/enterNewTweet';
+import EnterNewTweet from './EnterNewtweet/EnterNewTweet';
 
 
 const ShowTweets = () => {

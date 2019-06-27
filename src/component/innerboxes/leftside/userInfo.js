@@ -1,6 +1,6 @@
 import React from 'react';
-import BlueBox from './bluebox/blueBox';
-import WhiteBox from './whitebox/whiteBox';
+import BlueBox from './BlueBox/BlueBox';
+import WhiteBox from './WhiteBox/WhiteBox';
 import './userInfo.css'
 
 const UserInfo = () => {
