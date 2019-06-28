@@ -1,10 +1,11 @@
-.UserInfo-Container {
+.userInfo_container {
   position: relative;
   right: 5%;
   margin-top: 15px;
+  margin-left: 25px;
 }
 
-.User_Info {
+.user_info {
   width: 20px;
   height: 10px;
   text-align: left;

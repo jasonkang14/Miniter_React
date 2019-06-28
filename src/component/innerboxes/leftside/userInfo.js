@@ -6,7 +6,7 @@ import './userInfo.css'
 const UserInfo = () => {
 
     return (
-        <div className="UserInfo">
+        <div className="userInfo">
             <BlueBox/>
             <WhiteBox/>
         </div>

@@ -9,7 +9,6 @@ const Input = props => {
             placeholder={props.placeholder} 
             autoComplete={props.autoComplete}
             onChange={props.changeInput}
-            required
         />
     );
 }

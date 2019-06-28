@@ -1,0 +1,17 @@
+.deleteBtn, .editBtn {
+  color: black;
+  background-color: rgb(153, 214, 255);
+  width: 40px;
+  position: relative;
+  left: 90%;
+  bottom: 10%;
+  margin-left: 15px;
+  font-size: 20px;
+  
+  &:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+  }
+  
+}
+

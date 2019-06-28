@@ -1,11 +1,11 @@
-.BlueBox {
+.blueBox {
     position: relative;
     background: #0099ff; 
     height: 80px;
     width: 100%;
   }
 
-  .BlueCircle {
+  .blueCircle {
     background: #0099ff; 
     position: absolute;
     left: 12%;

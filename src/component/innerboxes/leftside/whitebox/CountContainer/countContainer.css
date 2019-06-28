@@ -1,9 +1,10 @@
-.Count-Container {
+.countContainer {
   position: relative;
   right: 5%;
+  margin-left: 15px;
 }
 
-.Count_Info {
+.countInfo {
   display: inline-block;
   width: 20px;
   height: 10px;

@@ -3,7 +3,7 @@ import './profile.css'
 
 const Profile = () => {
     return (
-        <div className="Profile">
+        <div className="profile">
             @jkang14
         </div>
     );

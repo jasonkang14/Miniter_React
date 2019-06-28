@@ -4,8 +4,8 @@ import './blueBox.css';
 
 const BlueBox = () => {
     return (
-        <div className="BlueBox">
-            <div className="BlueCircle"/>
+        <div className="blueBox">
+            <div className="blueCircle"/>
         </div>
     );
 }

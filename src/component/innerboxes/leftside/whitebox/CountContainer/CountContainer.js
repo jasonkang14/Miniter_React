@@ -3,10 +3,10 @@ import './countContainer.css'
 
 const CountContainer = () => {
     return (
-        <div className="Count_Container">
-            <span className="Count_Info TweetCount">15</span>
-            <span className="Count_Info FollowingCount">3</span>
-            <span className="Count_Info FollowerCount">4</span>
+        <div className="countContainer">
+            <span className="countInfo tweetCount">15</span>
+            <span className="countInfo followingCount">3</span>
+            <span className="countInfo followerCount">4</span>
         </div>
     );
 }

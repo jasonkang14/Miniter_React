@@ -7,7 +7,7 @@ import './whiteBox.css';
 
 const WhiteBox = () => {
     return (
-        <div className="WhiteBox">
+        <div className="whiteBox">
             <UserName />
             <Profile />
             <UserInfoContainer />
